@@ -87,9 +87,9 @@ export default function Home() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7 }}
             >
-              <h1 className="typing-effect text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-green-700 lg:mb-4 dark:text-green-500 text-center">
-                HIRANTHA DISSANAYAKE
-              </h1>
+<h1 className="typing-effect text-1xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-green-700 lg:mb-4 dark:text-green-500 text-center w-full break-words">
+  HIRANTHA DISSANAYAKE
+</h1>
 
             </motion.div>
 
