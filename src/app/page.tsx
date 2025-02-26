@@ -91,26 +91,48 @@ export default function Home() {
               </h1>
             </motion.div>
             
-            <h3 className="text-2xl py-4 md:text-3xl dark:text-white">Mobile Application Full Stack Developer - Flutter</h3>
+            <h3 className="text-2xl pt-5 md:text-3xl dark:text-white">Mobile Application Full Stack Developer - Flutter</h3>
+            <h3 className="text-2xl pb-4 md:text-3xl dark:text-white">Mobile User Interface Designer (UI/UX)</h3>
             <p className="text-sm py-4 text-gray-400 leading-6 max-w-xl mx-auto md:text-md dark:text-white">
-              "I am a Software Engineering undergraduate at Cinec Campus eager to leverage my skills in building innovative digital solutions. With a strong foundation in Flutter and React JS, I specialize in crafting user-centric mobile apps and dynamic web applications."
+            I am a Software Engineering undergraduate at Cinec Campus eager to leverage my skills in building innovative digital solutions. With a strong foundation in Flutter , I specialize in crafting user-centric mobile apps for both Android and iOS platforms."
             </p>
           </div>
 
           {/* Social Icons */}
           <div className="text-5xl flex justify-center gap-16 text-gray-600">
-            <a href="https://github.com/HiranthaDissanayake"><FaGithub /></a>
-            <a href="https://www.linkedin.com/in/hirantha-dissanayake-30107a28a/"><FaLinkedin /></a>
-            <a href="https://web.facebook.com/hirantha.dissanayake.33/"><CiFacebook /></a>
-          </div>
+      <a
+        href="https://github.com/HiranthaDissanayake"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition-colors duration-300 hover:text-green-500 active:text-green-500"
+      >
+        <FaGithub />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/hirantha-dissanayake-30107a28a/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition-colors duration-300 hover:text-green-500 active:text-green-500"
+      >
+        <FaLinkedin />
+      </a>
+      <a
+        href="https://web.facebook.com/hirantha.dissanayake.33/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition-colors duration-300 hover:text-green-500 active:text-green-500"
+      >
+        <CiFacebook />
+      </a>
+    </div>
         </section>
 
                 {/* services */}
 
                 <section>
           <div>
-            <h2 className=" text-5xl py-10 font-bold opacity-60 dark:text-white">Services I Offer</h2>
-            <p className=" text-sm py-2 text-gray-400 leading-6">"I am a Software Engineering undergraduate at Cinec Campus eager to leverage my skills in building innovative digital solutions. With a strong foundation in Flutter and React JS, I specialize in crafting user-centric mobile apps and dynamic web applications."</p>
+            <h2 className=" text-5xl pt-10 font-bold opacity-60 dark:text-white">Services I Offer</h2>
+
 
           </div>
 
@@ -122,16 +144,16 @@ export default function Home() {
               whileHover={{scale:1.1}}
               whileTap={{scale:0.9}}
               >
-                <div className=" bg-green-400 text-center shadow-sm rounded-xl my-10 py-5 px-5">
+                <div className=" bg-green-500 text-center shadow-sm rounded-xl my-10 py-5 px-5">
                 <Image 
                 src={applicationDesign} 
                 alt={"application image"}
-                width={100}
-                height={100}
+                width={200}
+                height={200}
                 className=" inline"
                 />
-                <h2 className=" text-2xl font-bold">Application Developing</h2>
-                <p className=" text-sm py-2 px-2 text-gray-800 leading-6">"I am proficient in crafting robust and scalable mobile applications using the Flutter framework. My expertise extends to efficient data management through the integration of Firebase and SQLite databases, allowing me to create dynamic and engaging user experiences."</p>
+                <h2 className=" text-2xl font-bold">Mobile Application Developing</h2>
+                <p className=" text-sm py-2 px-2 text-gray-800 leading-6">"I am a passionate Flutter mobile application developer dedicated to building high-quality, user-friendly, and efficient mobile apps. With a strong foundation in Flutter, Firebase and Node.Js & Express Js, I specialize in crafting seamless cross-platform applications that enhance user experience. I am always eager to learn new technologies and implement innovative solutions to create impactful digital products."</p>
                 </div>
               </motion.div>
               
@@ -141,16 +163,16 @@ export default function Home() {
               whileHover={{scale:1.1}}
               whileTap={{scale:0.9}}
               >
-                <div className=" bg-green-400 text-center shadow-sm rounded-xl my-10 py-5 px-5">
+                <div className=" bg-green-500 text-center shadow-sm rounded-xl my-10 py-5 px-5">
                 <Image 
                 src={webDesign} 
                 alt={"web design image"}
-                width={100}
-                height={100}
+                width={200}
+                height={200}
                 className=" inline"
                 />
-                <h2 className=" text-2xl font-bold">Web Developing</h2>
-                <p className=" text-sm py-2 px-2 text-gray-800 leading-6">"I am skilled in crafting visually appealing and responsive websites using HTML, CSS, and JavaScript. I leverage the power of Next.js and React.js frameworks to build dynamic web applications, and I employ Tailwind CSS for efficient and stylish design implementation."</p>
+                <h2 className=" text-2xl font-bold">Mobile UI/UX Designing</h2>
+                <p className=" text-sm py-2 px-2 text-gray-800 leading-6">"I have a good understanding of UI/UX design for mobile interfaces, focusing on creating intuitive, user-friendly, and visually appealing app experiences. I prioritize usability, accessibility, and modern design trends to enhance user engagement and satisfaction."</p>
                 </div>
               </motion.div>
               
@@ -163,7 +185,7 @@ export default function Home() {
         <section>
           <div>
             <h2 className=" text-5xl py-10 font-bold opacity-60 dark:text-white">My Projects</h2>
-            <p className=" dark:text-white">"This section showcases a collection of my projects, demonstrating my ability to transform ideas into functional digital products. Explore the diverse range of mobile apps and websites I've created, and feel free to delve into the source code to understand the technical intricacies behind each project."</p>
+            <p className=" dark:text-white">"This section showcases a collection of my projects, demonstrating my ability to transform ideas into functional digital products. Explore the diverse range of mobile apps I've created and Mobile user interfaces I've designed, and feel free to delve into the source code to understand the technical intricacies behind each project."</p>
           </div>
 
           {/* images */}
@@ -211,48 +233,7 @@ export default function Home() {
             />
               </div>
             </motion.div>
-            
-            <motion.div
-            whileHover={{scale:1.1, rotate:3}}
-            whileTap={{scale:0.8, rotate:-10, borderRadius:"100%"}}
-            >
-              <div className=" basis-1/3 flex-1 lg: w-80">
-              <Image 
-              src={image1} 
-              alt={"image 1"}
-              layout="responsive"
-              className="rounded-lg object-cover"
-            />
-              </div>
-            </motion.div>
-            
-            <motion.div
-            whileHover={{scale:1.1, rotate:3}}
-            whileTap={{scale:0.8, rotate:-10, borderRadius:"100%"}}
-            >
-              <div className=" basis-1/3 flex-1  lg: w-80">
-              <Image 
-              src={image2} 
-              alt={"image 1"}
-              layout="responsive"
-              className="rounded-lg object-cover"
-            />
-              </div>
-            </motion.div>
-            
-            <motion.div 
-            whileHover={{scale:1.1, rotate:3}}
-            whileTap={{scale:0.8, rotate:-10, borderRadius:"100%"}}
-            >
-              <div className=" basis-1/3 flex-1 lg:w-80">
-              <Image 
-              src={image3} 
-              alt={"image 1"}
-              layout="responsive"
-              className="rounded-lg object-cover"
-            />
-              </div>
-            </motion.div>
+          
  
           </div>
         </section>
@@ -262,21 +243,34 @@ export default function Home() {
         <footer className=" border-t-2 border-black text-sm opacity-70 flex flex-col gap-5 items-center justify-center py-10 lg:flex-row lg:items-center dark:border-white">
           <div>
           <h3 className=" text-base mb-2  dark:text-white"> Contact me for more details</h3>
-          <p className=" opacity-40 mb-10 dark:text-white">Looking to bring your app or website idea to life? I offer professional mobile app development using Flutter and Firebase, as well as web development with React.js, Next.js, and Tailwind CSS. Let's create something amazing together! Contact me through the following channels,</p>
+          <p className=" opacity-40 mb-10 dark:text-white">Looking to bring your app idea to life? I offer professional mobile app development using Flutter, Firebase, Node.js, and Express.js. Let's create something amazing together! Contact me through the following channels.</p>
 
-          <div className=" text-5xl flex justify-center gap-16 text-gray-600">
-            <a  href="https://github.com/HiranthaDissanayake">
-            <FaGithub />
-            </a>
-
-            <a href="https://www.linkedin.com/in/hirantha-dissanayake-30107a28a/">
-            <FaLinkedin />
-            </a>
-
-            <a href="https://web.facebook.com/hirantha.dissanayake.33/">
-            <CiFacebook />
-            </a>
-          </div>
+          <div className="text-5xl flex justify-center gap-16 text-gray-600">
+      <a
+        href="https://github.com/HiranthaDissanayake"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition-colors duration-300 hover:text-green-500 active:text-green-500"
+      >
+        <FaGithub />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/hirantha-dissanayake-30107a28a/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition-colors duration-300 hover:text-green-500 active:text-green-500"
+      >
+        <FaLinkedin />
+      </a>
+      <a
+        href="https://web.facebook.com/hirantha.dissanayake.33/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition-colors duration-300 hover:text-green-500 active:text-green-500"
+      >
+        <CiFacebook />
+      </a>
+    </div>
         </div>
         </footer>
       </main>
