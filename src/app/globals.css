@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -10,10 +10,146 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+/* Green Gradient Background Animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
+/* Bounce Effect */
+@keyframes bounceEffect {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Floating Effect */
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
 
 @layer utilities {
+  /* Text Wrap Balance */
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Add green gradient animation */
+  .bg-green-gradient {
+    background: linear-gradient(45deg, #0f9b8e, #00e676, #00bfae, #0f9b8e);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+  }
+
+  /* Fade-in effect */
+  .fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Typing Effect */
+  .typing-effect {
+    font-family: 'Bebas Neue', sans-serif;
+    overflow: hidden;
+    border-right: 0.15em solid #00e676;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
+  }
+
+  @keyframes typing {
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  /* Hover Scaling Effect */
+  .hover-scale {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+
+  /* Neon Glow Effect */
+  .neon-text {
+    text-shadow: 0 0 5px #00e676, 0 0 10px #00bfae, 0 0 15px #0f9b8e;
+  }
+
+  /* Card Hover Effect */
+  .hover-card {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Button Animation */
+  .animated-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+
+    /* Button Animation */
+    .animated-image {
+      background-color: bg-gradient-to-b from-green-600;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 300px;
+      font-weight: bold;
+      transition: all 0.3s ease-in-out;
+    }
+
+  .animated-button:hover {
+    background-color: #00bfae;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Floating Effect */
+  .floating {
+    animation: floating 3s ease-in-out infinite;
+  }
+
+  /* Bounce Effect */
+  .bounce {
+    animation: bounceEffect 1.5s infinite;
   }
 }
