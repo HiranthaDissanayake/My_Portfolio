@@ -30,7 +30,7 @@ export default function Home() {
       {/* Head Section */}
       <Head>
         <title>Hirantha Dissanayake | Portfolio</title>
-        <meta name="description" content="Portfolio of Hirantha Dissanayake, Mobile App & Web Developer" />
+        <meta name="description" content="Portfolio of Hirantha Dissanayake, Flutter Developer" />
         <link 
           rel="stylesheet" 
           href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&family=Pacifico&family=Poppins:wght@100..900&display=swap" 
@@ -41,27 +41,28 @@ export default function Home() {
         {/* Navigation & Hero Section */}
         <section>
           {/* Navigation */}
-          <nav className="py-10 flex justify-between">
-            <h1 className="text-sm md:text-xl dark:text-white">Welcome to my portfolio</h1>
-            <ul className="flex items-center">
-              {/* Dark Mode Toggle */}
-              <li>
-                <BsFillMoonStarsFill 
-                  onClick={() => setdarkmode(!darkmode)} 
-                  className="cursor-pointer text-xl mx-5 dark:text-white"
-                />
-              </li>
-              <li>
-                <a 
-                  className="bg-green-800 text-black px-4 py-2 border-none rounded-md dark:text-white md:w-20"
-                  href="https://docs.google.com/document/d/1nm6rsLGzd6YZaS9dqM8FS-4qfRqtJOkF/edit?usp=drive_link" 
-                  download={"Download CV"}
-                >
-                  Download CV
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <nav className="py-5 px-5 flex items-center justify-between w-full">
+  <h1 className="text-xs sm:text-sm md:text-xl dark:text-white">
+    Welcome to my portfolio
+  </h1>
+
+  <div className="flex items-center gap-3 sm:gap-4">
+    {/* Dark Mode Toggle */}
+    <BsFillMoonStarsFill 
+      onClick={() => setdarkmode(!darkmode)} 
+      className="cursor-pointer text-lg sm:text-xl dark:text-white"
+    />
+
+    {/* Download CV Button */}
+    <a 
+      className="bg-green-800 text-black px-3 py-1 sm:px-4 sm:py-2 border-none rounded-md dark:text-white text-xs sm:text-sm md:text-base hover:bg-green-600 transition-all"
+      href="https://docs.google.com/document/d/1nm6rsLGzd6YZaS9dqM8FS-4qfRqtJOkF/edit?usp=drive_link" 
+      download={"Download CV"}
+    >
+      Download CV
+    </a>
+  </div>
+</nav>
 
           {/* Hero Section */}
           <div className="text-center p-10">
