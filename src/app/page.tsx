@@ -67,18 +67,18 @@ export default function Home() {
           <div className="text-center p-10">
             {/* Profile Image */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.9 }}
-            >
-              <div className="m-auto relative bg-gradient-to-b from-green-600 w-80 p-7 mt-30 mb-5 rounded-full">
-                <Image 
-                  src={profileImage} 
-                  alt="profile image" 
-                  className="w-30 h-50 rounded-full"
-                />
-              </div>
-            </motion.div>
+  initial={{ opacity: 0, scale: 0.5 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.9 }}
+>
+  <div className="m-auto relative bg-gradient-to-b from-green-600 w-60 h-80 sm:w-56 sm:h-70 md:w-60 md:h-80 lg:w-75 lg:h-80 p-4 mt-10 mb-5 rounded-full flex items-center justify-center">
+    <Image
+      src={profileImage}
+      alt="profile image"
+      className="w-full h-full object-cover rounded-full"
+    />
+  </div>
+</motion.div>
 
             {/* Name & Title */}
             <motion.div
@@ -240,39 +240,26 @@ export default function Home() {
 
         {/* footer */}
 
-        <footer className=" border-t-2 border-black text-sm opacity-70 flex flex-col gap-5 items-center justify-center py-10 lg:flex-row lg:items-center dark:border-white">
-          <div>
-          <h3 className=" text-base mb-2  dark:text-white"> Contact me for more details</h3>
-          <p className=" opacity-40 mb-10 dark:text-white">Looking to bring your app idea to life? I offer professional mobile app development using Flutter, Firebase, Node.js, and Express.js. Let's create something amazing together! Contact me through the following channels.</p>
-
-          <div className="text-5xl flex justify-center gap-16 text-gray-600">
-      <a
-        href="https://github.com/HiranthaDissanayake"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="transition-colors duration-300 hover:text-green-500 active:text-green-500"
-      >
-        <FaGithub />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/hirantha-dissanayake-30107a28a/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="transition-colors duration-300 hover:text-green-500 active:text-green-500"
-      >
-        <FaLinkedin />
-      </a>
-      <a
-        href="https://web.facebook.com/hirantha.dissanayake.33/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="transition-colors duration-300 hover:text-green-500 active:text-green-500"
-      >
-        <CiFacebook />
-      </a>
-    </div>
-        </div>
+        <footer className="border-t-2 border-black text-sm opacity-70 flex flex-col gap-5 items-center justify-center py-10 md:px-10 lg:flex-row lg:items-center lg:justify-between dark:border-white">
+          <div className="text-center lg:text-left max-w-lg">
+            <h3 className="text-base mb-2 dark:text-white">Contact me for more details</h3>
+            <p className="opacity-40 mb-6 dark:text-white">
+              Looking to bring your app idea to life? I offer professional mobile app development using Flutter, Firebase, Node.js, and Express.js. Let's create something amazing together! Contact me through the following channels.
+            </p>
+          </div>
+          <div className="text-5xl flex justify-center gap-8 text-gray-600">
+            <a href="https://github.com/HiranthaDissanayake" target="_blank" rel="noopener noreferrer" className="transition-colors duration-300 hover:text-green-500 active:text-green-500">
+              <FaGithub />
+            </a>
+            <a href="https://www.linkedin.com/in/hirantha-dissanayake-30107a28a/" target="_blank" rel="noopener noreferrer" className="transition-colors duration-300 hover:text-green-500 active:text-green-500">
+              <FaLinkedin />
+            </a>
+            <a href="https://web.facebook.com/hirantha.dissanayake.33/" target="_blank" rel="noopener noreferrer" className="transition-colors duration-300 hover:text-green-500 active:text-green-500">
+              <CiFacebook />
+            </a>
+          </div>
         </footer>
+
       </main>
     </div>
   );
