@@ -56,7 +56,7 @@ export default function Home() {
               {/* Download CV Button */}
               <a
                 className=" bg-green-800 text-black px-3 py-1 sm:px-4 sm:py-2 border-none rounded-md dark:text-white text-xs sm:text-sm md:text-base hover:bg-green-600 transition-all"
-                href="https://drive.google.com/file/d/1aFflMc0VcIgI0FLkR-Gk-pMbmh7ogibe/view?usp=sharing"
+                href="https://drive.google.com/file/d/1Ok0d3teD-F-gvrMx-iWiLZhDesqgFgV5/view?usp=sharing"
                 download={"Download CV"}
               >
                 Download CV
